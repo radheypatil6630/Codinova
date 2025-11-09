@@ -18,6 +18,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // app.use(express.urlencoded());
 app.use(
   cors({
+      origin: "https://codinovaa.vercel.app",
     credentials: true,
   })
 );

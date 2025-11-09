@@ -14,15 +14,15 @@ router.get(
     {
       successMessage: "User successfully logged in",
       failureMessage: "User failed to log in",
-      successRedirect: "http://localhost:5173/",
-      failureRedirect: "http://localhost:5173/login/failed",
+      successRedirect: "https://codinovaa.vercel.app", //"http://localhost:5173/",
+      failureRedirect: "https://codinovaa.vercel.app/login/failed",//"http://localhost:5173/login/failed",
     },
     (req, res) => {
       console.log("req came /google/callback");
 
       const token = req.user.token;
       res.cookie("token", token, { httpOnly: true });
-      res.redirect("http://localhost:5173");
+      res.redirect("https://codinovaa.vercel.app")//("http://localhost:5173");
     }
   )
 );

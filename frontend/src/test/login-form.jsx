@@ -85,7 +85,7 @@ export function LoginFormDemo() {
   const handleGoogleAuth = () => {
     setLoading(true);
     try {
-      window.location.href = "http://localhost:5000/auth/google/callback";
+      window.location.href = "https://codinovaa.vercel.app/auth/google/callback";//http://localhost:5000
     } catch (err) {
       console.log(err);
       setError(true);
