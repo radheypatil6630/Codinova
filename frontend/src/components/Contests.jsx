@@ -13,7 +13,7 @@ const Contests = () => {
 
   useEffect(() => {
     const getHackathonData = async () => {
-      const response = await axios.get("https://api.digitomize.com/hackathons");
+      const response = await axios.get("https://api.Codinova.com/hackathons");
       console.log("hackathon list");
       console.log(response);
       setHackathonData(response.data.results);
@@ -22,7 +22,7 @@ const Contests = () => {
   }, []);
 
   useEffect(() => {
-    // const res = await axios.get("https://api.digitomize.com/contests");
+    // const res = await axios.get("https://api.Codinova.com/contests");
     const call = async () => {
       const res = await axios.get(
         `${apiBaseUrl}/contests/allcontest`

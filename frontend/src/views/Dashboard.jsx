@@ -316,7 +316,7 @@ export default function Dashboard() {
     "Keep the streak alive 💪",
     "One blog at a time.",
     "Create with purpose ✍️",
-    "Digitomize your thoughts!",
+    "Codinova your thoughts!",
   ];
   const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
@@ -452,7 +452,7 @@ export default function Dashboard() {
 
               <div className="bg-[#1a1a1a] border border-[#2a2a2a] rounded-xl w-full md:w-5/12 ml-2 p-6 relative overflow-hidden">
                 <div className="mb-6">
-                  <p className="text-2xl font-semibold text-[#5eead4]">Digitomize Rank</p>
+                  <p className="text-2xl font-semibold text-[#5eead4]">Codinova Rank</p>
                   <p className="text-3xl md:text-5xl font-bold text-white">#830</p>
                 </div>
 

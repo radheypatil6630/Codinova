@@ -7,7 +7,7 @@ export default function ProblemsPage() {
     const [searchParams] = useSearchParams()
     const location = useLocation();
     useEffect(()=>{
-        document.title = "Digitomize | Problems"
+        document.title = "Codinova | Problems"
     },[])
     useEffect(() => {
         const company = searchParams.get('company')
